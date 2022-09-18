@@ -18,7 +18,7 @@ export function Index(props) {
   const [currentTodo, setcurrentTodo] = useState(InitialData)
   const [list, setList] = useState([])
   const [addOperation, setaddOperation] = useState(true)
-  const [selectedStatus, setselectedStatus] = useState({ value: 'false', label: 'Tamamlanmadı' })
+  const [selectedStatus, setselectedStatus] = useState({ value: 'false', label: 'Not Completed' })
   useEffect(() => {
     const storageduser = localStorage.getItem('username')
     if (storageduser) {

@@ -34,17 +34,17 @@ export default function Index(props) {
             <div className='Userlogo'>
               <img className='Login__Userlogo' src={User} />
             </div>
-            <label className='Login__Title'>Todo App Uygulaması</label>
+            <label className='Login__Title'>Todo App Application</label>
           </div>
           <div className="card-body">
-            <h5 className="card-title">Lütfen Kullanıc Adınız ile sisteme giriş yapınız.</h5>
+            <h5 className="card-title">Please Login to the System with Your Username.</h5>
             <div className='d-flex justify-content-center align-items-center flex-column'>
-              <label className='Login__Label__Err' hidden={!errmsg}>Lütfen Geçerli Bir kullanıcı adı giriniz</label>
-              <label className='Login__Label__Err' hidden={!errmsg}>Kullanıcı Adı en az 4 karakter olmalı</label>
-              <input id="username" type="text" className={`form-control form-control-lg Login__Input ${errmsg ? "Login__Input__Err" : null}`} placeholder="Kullanıc Adı"
+              <label className='Login__Label__Err' hidden={!errmsg}>Please Enter a Valid Username</label>
+              <label className='Login__Label__Err' hidden={!errmsg}>Username Must be at Least 4 Characters.</label>
+              <input id="username" type="text" className={`form-control form-control-lg Login__Input ${errmsg ? "Login__Input__Err" : null}`} placeholder="Username"
                 value={username} onChange={handleChange}
               ></input>
-              <button className='btn btn-light Login__Button' onClick={() => { handleLogin() }}>Giriş Yap</button>
+              <button className='btn btn-light Login__Button' onClick={() => { handleLogin() }}>Login</button>
             </div>
           </div>
         </div>
