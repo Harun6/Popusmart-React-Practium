@@ -113,8 +113,8 @@ export function Index(props) {
                   <th scope="col">ID</th>
                   <th scope="col">Job To Do</th>
                   <th scope="col">Is It Complete</th>
-                  <th scope="col">Düzenle</th>
-                  <th scope="col">Sil</th>
+                  <th scope="col">Edit</th>
+                  <th scope="col">Delete</th>
                 </tr>
               </thead>
               <tbody>
@@ -122,15 +122,15 @@ export function Index(props) {
                   return <tr key={item.id}>
                     <th>{item.id}</th>
                     <td>{item.content}</td>
-                    {item.isCompleted ? <td>Tamamlandı</td> : <td>Tamamlanmadı</td>}
+                    {item.isCompleted ? <td>Completed</td> : <td>Not Completed</td>}
                     <td>
                       <button id={item.id} type="button" onClick={HandleUpdateStatus} className="btn btn-primary" >
-                        Düzenle
+                        Edit
                       </button>
                     </td>
                     <td>
                       <button id={item.id} type="button" onClick={HandleDelete} className="btn btn-primary" >
-                        Sil
+                        Delete
                       </button>
                     </td>
                   </tr>
