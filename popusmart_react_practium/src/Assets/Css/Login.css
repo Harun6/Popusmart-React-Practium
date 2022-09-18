@@ -1,0 +1,43 @@
+
+.Login__Userlogo{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.Login__Container{
+    margin-top: 20px;
+    border: 2px;
+    border-color: black;
+}
+.Login__Title{
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Login__Input{
+    margin: 0px 3px;
+}
+.Login__Button{
+    width: 230px;
+    height: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    background-color: #2e2e2e!important;
+}
+
+.Login__Input__Err{
+    border: 2px solid red;
+}
+
+.Login__Label__Err{
+    font-size: small;
+    color: red;
+}
